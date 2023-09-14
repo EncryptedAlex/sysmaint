@@ -5,21 +5,33 @@
 }
 
 <div class="text-center">
+    @if (TempData["MensajeLogin"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["MensajeLogin"]
+        </div>
+    }
     <h1 class="display-4">Inicio de sesion</h1>
-    <div class="login1">
-    <form method="post">
-        <div class="form-group">
-            <label for="usuario">User/Email:</label>
-            <input type="text" id="usuario" name="usuario" class="form-control" required>
-        </div>
+    <d class="login1">
+        <form method="post">
+            <!-- entrada de usuario -->
+            <div class="form-group">
+                <label for="usuario">User/Email:</label>
+                <input type="text" id="usuario" name="usuario" class="form-control"
+                    asp-for="ObjetoUsuario.NombreUsuario" required>
+            </div>
+            <!-- entrada de contraseña -->
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" class="form-control"
+                    asp-for="ObjetoUsuario.Contraseña" required>
+            </div>
 
-        <div class="form-group">
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" class="form-control" required>
-        </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
 
-        <button type="submit" class="btn btn-primary">Sign in</button>
-    </form>
-</div>
+        
+
+    </div>
     <!--<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>-->
 </div>
