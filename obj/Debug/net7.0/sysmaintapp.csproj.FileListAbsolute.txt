@@ -28,3 +28,14 @@ C:\Users\jhonn\Desktop\sysmaintdev\sysmaint\obj\Debug\net7.0\refint\sysmaintapp.
 C:\Users\jhonn\Desktop\sysmaintdev\sysmaint\obj\Debug\net7.0\sysmaintapp.pdb
 C:\Users\jhonn\Desktop\sysmaintdev\sysmaint\obj\Debug\net7.0\sysmaintapp.genruntimeconfig.cache
 C:\Users\jhonn\Desktop\sysmaintdev\sysmaint\obj\Debug\net7.0\ref\sysmaintapp.dll
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.csproj.AssemblyReference.cache
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.AssemblyInfoInputs.cache
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.AssemblyInfo.cs
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.RazorAssemblyInfo.cache
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.RazorAssemblyInfo.cs
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.dll
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\refint\sysmaintapp.dll
+C:\Users\Sebastian\Desktop\sysmaint\obj\Debug\net7.0\sysmaintapp.pdb
