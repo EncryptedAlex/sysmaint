@@ -20,3 +20,41 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Estilo para centrar y ajustar el formulario */
+.login1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Esto es opcional y depende de tu diseño */
+}
+
+
+/* Estilos adicionales para los elementos internos del formulario */
+.login1 label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login1 input[type="text"],
+.login1 input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login1 button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login1 button:hover {
+  background-color: #0056b3; /* Cambiar color de fondo al pasar el ratón */
+}
