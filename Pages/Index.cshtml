@@ -16,18 +16,18 @@
                     <img src="https://i.ibb.co/RSGPwqG/nobackground.png" width="100" alt="logo">
                 </div>
 
-                <h2 class="fw-bold text-center py-5">Bienvenido a esta cosita linda</h2>
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
 
                 <!-- Formulario del login con sus inputs y botones-->
 
-                <form action="#">
+                <form method="post">
                     <div class="mb-4">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" name="email">
+                        <label asp-for="ObjUser.emailUser" for="email" class="form-label">Correo electrónico </label>
+                        <input id="floatingInput" type="email" class="form-control" asp-for="ObjUser.emailUser" required/>
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" name="email">
+                        <label asp-for="ObjUser.passUser" for="password" class="form-label">Contraseña</label>
+                        <input id="floatingPassword" asp-for="ObjUser.passUser" type="password" class="form-control" required/>
                     </div>
                     <div class="mb-4">
                         <input type="checkbox" name="connected" class="form-check-input">
@@ -90,13 +90,14 @@
 
 <!--Codigo Viejo-->
 
-@* <div class="text-center">
+<div class="text-center">
 @if (TempData["MensajeLogin"] != null)
 {
 <div class="alert alert-success" role="alert">
 @TempData["MensajeLogin"]
 </div>
 }
+@* 
 <h1 class="display-4">Inicio de sesión principal</h1>
 <div class="login1">
 <form method="post">
