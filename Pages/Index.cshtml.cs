@@ -20,10 +20,11 @@ public class IndexModel : PageModel
     if (ObjUser.validar())
     {
 
-        return RedirectToPage("Error");
+        return RedirectToPage("MainOn");
     }
     else
     {
+    
         TempData["MensajeLogin"] = "Datos de inicio de sesion incorrectos";
         return Page();
     }

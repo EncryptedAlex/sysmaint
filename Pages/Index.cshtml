@@ -6,6 +6,12 @@
 
 
 <body>
+@if (TempData["MensajeLogin"] != null)
+{
+<div class="alert alert-success" role="alert">
+@TempData["MensajeLogin"]
+</div>
+}
 
     <!--Contenedor Principal-->
     <div class="container w-auto vh-50 rounded shadow">
@@ -98,14 +104,6 @@
 
 
 <!--Codigo Viejo-->
-
-<div class="text-center">
-@if (TempData["MensajeLogin"] != null)
-{
-<div class="alert alert-success" role="alert">
-@TempData["MensajeLogin"]
-</div>
-}
 @* 
 <h1 class="display-4">Inicio de sesión principal</h1>
 <div class="login1">
