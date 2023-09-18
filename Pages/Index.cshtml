@@ -11,23 +11,23 @@
             @TempData["MensajeLogin"]
         </div>
     }
-    <h1 class="display-4">Inicio de sesion principal</h1>
+    <h1 class="display-4">Inicio de sesión principal</h1>
     <d class="login1">
         <form method="post">
             <!-- entrada de usuario -->
             <div class="form-group">
-                <label for="usuario">User/Email:</label>
+                <label for="usuario">Correo:</label>
                 <input type="text" id="usuario" name="usuario" class="form-control"
                     asp-for="ObjetoUsuario.NombreUsuario" required>
             </div>
             <!-- entrada de contraseña -->
             <div class="form-group">
-                <label for="contrasena">Password:</label>
+                <label for="contrasena">Contraseña:</label>
                 <input type="password" id="contrasena" name="contrasena" class="form-control"
                     asp-for="ObjetoUsuario.Contraseña" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
         </form>
 
         
