@@ -5,5 +5,39 @@
 }
 
 <body>
-    <h1 class="text-center text-light">Esta es la pagina para registrar</h1>
+    <div class="container py-5">
+        <div class="col-md-6 mx-auto shadow bg-white p-4">
+            <h1 class="text-center mb-4">Registrarte</h1>
+
+            <form action="post">
+                <div class="mb-4">
+                    <input id="floatingInput" type="text" placeholder="Nombre de usuario" class="form-control" required
+                        maxlength="15" />
+                </div>
+                <div class="mb-4">
+                    <input id="floatingInput" type="email" placeholder="Correo electrónico" class="form-control"
+                        required maxlength="50" />
+                </div>
+                <div class="mb-4">
+                    <input id="floatingInput" type="number" placeholder="Cedúla" class="form-control" required
+                        maxlength="12" />
+                </div>
+                <div class="mb-4">
+                    <input id="floatingPassword" type="password" placeholder="Contraseña" class="form-control"
+                        required />
+                </div>
+                <div class="mb-4">
+                    <input id="floatingPassword" type="password" placeholder="Confirmar contraseña" class="form-control"
+                        required />
+                </div>
+                <div class="mb-4">
+                    <label for="verifymsg"></label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
