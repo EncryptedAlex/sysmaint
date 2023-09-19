@@ -9,35 +9,53 @@
         <div class="col-md-6 mx-auto shadow bg-white p-4">
             <h1 class="text-center mb-4">Registrarte</h1>
 
-            <form action="post">
+            <form method="post" asp-page-handler="OnPostAsync">
                 <div class="mb-4">
-                    <input id="floatingInput" type="text" placeholder="Nombre de usuario" class="form-control" required
+                    <input id="floatingInput" asp-for="ObjUserRegister.Name_user" type="text" placeholder="Nombre de usuario" class="form-control" required
                         maxlength="15" />
                 </div>
                 <div class="mb-4">
-                    <input id="floatingInput" type="email" placeholder="Correo electrónico" class="form-control"
+                    <input id="floatingInput" asp-for="ObjUserRegister.Email_user" type="email" placeholder="Correo electrónico" class="form-control"
                         required maxlength="50" />
                 </div>
                 <div class="mb-4">
-                    <input id="floatingInput" type="number" placeholder="Cedúla" class="form-control" required
+                    <input id="floatingInput" asp-for="ObjUserRegister.DNI_user" type="text" placeholder="Cedúla" class="form-control" required
                         maxlength="12" />
                 </div>
                 <div class="mb-4">
-                    <input id="floatingPassword" type="password" placeholder="Contraseña" class="form-control"
+                    <input id="password" asp-for="ObjUserRegister.Pass_user" type="password" placeholder="Contraseña" class="form-control"
                         required />
                 </div>
                 <div class="mb-4">
-                    <input id="floatingPassword" type="password" placeholder="Confirmar contraseña" class="form-control"
+                    <input id="confirmPassword" type="password" placeholder="Confirmar contraseña" class="form-control"
                         required />
-                </div>
-                <div class="mb-4">
-                    <label for="verifymsg"></label>
+                    <div id="verifymsg"></div>
                 </div>
                 <div class="d-grid">
+                
                     <button type="submit" class="btn btn-primary">Registrarse</button>
                 </div>
             </form>
         </div>
     </div>
+    <!-- script para validar similitud de contraseñas-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#confirmPassword").keyup(function () {
+                var password = $("#password").val();
+                var confirmPassword = $(this).val();
 
+                if (password !== confirmPassword) {
+                    $("#verifymsg").text("Las contraseñas no coinciden").css("color", "red");
+                } else {
+                    
+                    $("#verifymsg").text("Las contraseñas coinciden").css("color", "green");
+                }
+                if (confirmPassword === "") {
+                $("#verifymsg").text("") // Borra el mensaje si el campo está en blanco
+            }
+            });
+        });
+    </script>
 </body>

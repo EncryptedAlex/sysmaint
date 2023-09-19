@@ -15,19 +15,19 @@ public class IndexModel : PageModel
     }
 
     public IActionResult OnPost()
-{
-
-    if (ObjUser.validar())
     {
 
-        return RedirectToPage("MainOn");
+        if (ObjUser.validar())
+        {
+
+            return RedirectToPage("MainOn");
+        }
+        else
+        {
+        
+            TempData["MensajeLogin"] = "Datos de inicio de sesion incorrectos";
+            return Page();
+        }
     }
-    else
-    {
-    
-        TempData["MensajeLogin"] = "Datos de inicio de sesion incorrectos";
-        return Page();
-    }
-}
 
 }
